@@ -1,0 +1,44 @@
+{
+  "name": "sea-auth-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3001",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@azure/msal-browser": "^3.27.0",
+    "@reduxjs/toolkit": "^2.3.0",
+    "@szhsin/react-menu": "^4.2.2",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "formik": "^2.4.6",
+    "html2canvas": "^1.4.1",
+    "jspdf": "^2.5.2",
+    "moment": "^2.30.1",
+    "moment-timezone": "^0.5.46",
+    "next": "15.0.2",
+    "next-client-cookies": "^2.0.0",
+    "quill": "^2.0.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-quill-new": "^3.3.3",
+    "react-redux": "^9.1.2",
+    "redux-persist": "^6.0.0",
+    "sea-auth-ui": "file:",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^5.0.2",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "15.0.2",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}

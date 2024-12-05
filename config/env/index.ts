@@ -1,0 +1,8 @@
+export const BACKEND_BASE_URL = process.env.NEXT_PUBLIC_BACKEND_BASE_URL || "";
+
+export const MICROSOFT_CLIENT_ID =
+  process.env.NEXT_PUBLIC_MICROSOFT_CLIENT_ID || "";
+export const MICROSOFT_TENANT_ID =
+  process.env.NEXT_PUBLIC_MICROSOFT_TENANT_ID || "";
+export const MICROSOFT_REDIRECT_URI =
+  process.env.NEXT_PUBLIC_MICROSOFT_REDIRECT_URI || "";
