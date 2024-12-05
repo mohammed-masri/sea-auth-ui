@@ -1,46 +1,47 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as Yup from "yup";
-import CommonValidations from "../common";
+import { ValidationUtils } from "sea-react-components";
 
 export const loginFormValidation = () => {
   return Yup.object({
-    email: CommonValidations.email,
-    password: CommonValidations.password,
+    email: ValidationUtils.email as any,
+    password: ValidationUtils.password as any,
   });
 };
 
 export const signUpFormValidation = () => {
   return Yup.object({
-    name: CommonValidations.name,
-    email: CommonValidations.email,
-    phoneNumber: CommonValidations.phoneNumber,
-    password: CommonValidations.password,
-    confirmPassword: CommonValidations.confirmPassword,
+    name: ValidationUtils.name as any,
+    email: ValidationUtils.email as any,
+    phoneNumber: ValidationUtils.phoneNumber as any,
+    password: ValidationUtils.password as any,
+    confirmPassword: ValidationUtils.confirmPassword as any,
   });
 };
 
 export const forgotPasswordValidation = () => {
   return Yup.object({
-    identifier: CommonValidations.identifier,
+    identifier: ValidationUtils.identifier as any,
   });
 };
 
 export const checkOTPValidityValidation = (length: number) => {
   return Yup.object({
-    otpCode: CommonValidations.otpCode(length),
+    otpCode: ValidationUtils.otpCode(length) as any,
   });
 };
 
 export const resetPasswordValidation = () => {
   return Yup.object({
-    password: CommonValidations.password,
-    confirmPassword: CommonValidations.confirmPassword,
+    password: ValidationUtils.password as any,
+    confirmPassword: ValidationUtils.confirmPassword as any,
   });
 };
 
 export const changePasswordValidation = () => {
   return Yup.object({
-    oldPassword: CommonValidations.password,
-    password: CommonValidations.password,
-    confirmPassword: CommonValidations.confirmPassword,
+    oldPassword: ValidationUtils.password as any,
+    password: ValidationUtils.password as any,
+    confirmPassword: ValidationUtils.confirmPassword as any,
   });
 };

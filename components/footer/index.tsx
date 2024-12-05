@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import { MomentUtils } from "@/utils";
+import { MomentUtils } from "sea-react-components";
 
 export default function Footer() {
   return (

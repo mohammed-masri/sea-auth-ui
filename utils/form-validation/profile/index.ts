@@ -1,9 +1,10 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import * as Yup from "yup";
-import CommonValidations from "../common";
+import { ValidationUtils } from "sea-react-components";
 
 export const updateProfileFormValidation = () => {
   return Yup.object({
-    name: CommonValidations.name,
-    birthDate: CommonValidations.birthDate,
+    name: ValidationUtils.name as any,
+    birthDate: ValidationUtils.birthDate as any,
   });
 };
