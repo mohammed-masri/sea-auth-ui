@@ -2,9 +2,7 @@ import type { Metadata } from "next";
 import { Suspense } from "react";
 import localFont from "next/font/local";
 import "./globals.css";
-import "react-quill-new/dist/quill.snow.css";
 import StoreProvider from "@/store/StoreProvider";
-import { CookiesProvider } from "next-client-cookies/server";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -18,7 +16,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Contract Manager",
+  title: "SEA AUTH",
 };
 
 export default function RootLayout({
@@ -35,9 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-bg-light`}
       >
         <Suspense>
-          <CookiesProvider>
-            <StoreProvider>{children}</StoreProvider>
-          </CookiesProvider>
+          <StoreProvider>{children}</StoreProvider>
         </Suspense>
       </body>
     </html>
