@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { useAppDispatch } from "@/store/hooks";
 import { setAuthData } from "@/store/slices/auth/slice";
 import { pushNewAlert } from "@/store/slices/alert/slice";
+import { Constants } from "@/config";
 
 export default function ProfileMenu() {
   const router = useRouter();
@@ -14,6 +15,7 @@ export default function ProfileMenu() {
   const handleLogout = () => {
     router.push("/login");
     dispatch(setAuthData(undefined));
+    localStorage.removeItem(Constants.LocalStorageKeys.JWTToken);
     dispatch(
       pushNewAlert({
         message: "Logout successfully",
