@@ -10,7 +10,6 @@ import {
   REGISTER,
 } from "redux-persist";
 
-import SingleContractReducer from "./slices/contract/slice";
 import layoutReducer from "./slices/layout/slice";
 import alertReducer from "./slices/alert/slice";
 import authReducer from "./slices/auth/slice";
@@ -21,7 +20,6 @@ const persistConfig = {
 };
 
 const rootReducer = combineReducers({
-  contract: SingleContractReducer,
   layout: layoutReducer,
   alert: alertReducer,
   auth: authReducer,
