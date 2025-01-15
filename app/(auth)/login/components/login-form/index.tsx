@@ -98,7 +98,7 @@ export default function LoginForm() {
               <label>Remember Me</label>
             </div>
 
-            <Link href="/forgot-password" className="text-secondary-light">
+            <Link href="/forgot-password" className="text-text">
               Forgot password?
             </Link>
           </div>

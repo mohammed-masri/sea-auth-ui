@@ -11,9 +11,7 @@ export default function ResetPasswordPage() {
     <div className="flex items-center justify-center h-full">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-2">
-          <p className="text-secondary-light font-semibold">
-            Enter your new password
-          </p>
+          <p className="text-text font-semibold">Enter your new password</p>
         </div>
 
         <ResetPasswordForm />

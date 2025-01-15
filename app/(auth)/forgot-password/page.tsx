@@ -11,7 +11,7 @@ export default function ForgotPasswordPage() {
     <div className="flex items-center justify-center h-full">
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-2">
-          <p className="text-secondary-light font-semibold">
+          <p className="text-text font-semibold">
             Enter your identifier below to reset your password
           </p>
         </div>

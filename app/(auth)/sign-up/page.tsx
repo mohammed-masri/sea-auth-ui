@@ -13,7 +13,7 @@ export default function SignUpPage() {
       <div className="flex flex-col gap-10">
         <div className="flex flex-col gap-2">
           <h1 className="text-3xl text-primary-light font-semibold">Welcome</h1>
-          <p className="text-secondary-light font-semibold">
+          <p className="text-text font-semibold">
             Enter your sign up information below
           </p>
         </div>
@@ -21,7 +21,7 @@ export default function SignUpPage() {
         <SignUpForm />
 
         <div className="flex gap-1">
-          <p className="text-secondary-light">Already have an account?</p>
+          <p className="text-text">Already have an account?</p>
           <Link className="text-primary-light font-semibold" href="/login">
             Sign In
           </Link>
